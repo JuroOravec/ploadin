@@ -3,7 +3,7 @@ const envCi = require('env-ci');
 
 const { config: defaultConfig, plugins } = require('./config');
 const { branches } = require('./merge.config');
-const { plugin } = require(process.cwd());
+const { plugin } = require('semantic-release-changelog-update');
 
 const { prBranch, branch } = envCi();
 
