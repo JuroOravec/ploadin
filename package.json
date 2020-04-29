@@ -1,7 +1,7 @@
 {
   "name": "ploadin",
   "version": "1.0.0",
-  "description": "Use single instance as both plugin and loader in Webpack",
+  "description": "Webpack plugin and loader in one. Use data from loaders in plugins and vice-versa.",
   "homepage": "https://github.com/JuroOravec/ploadin#readme",
   "repository": "github:JuroOravec/ploadin",
   "bugs": "https://github.com/JuroOravec/ploadin/issues",
