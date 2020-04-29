@@ -31,6 +31,7 @@
 
 * [_classId](ploadin.md#_classid)
 * [_instanceId](ploadin.md#_instanceid)
+* [classOptions](ploadin.md#classoptions)
 * [_classId](ploadin.md#static-_classid)
 * [asLoader](ploadin.md#static-asloader)
 
@@ -40,7 +41,7 @@
 
 \+ **new Ploadin**(): *[Ploadin](ploadin.md)*
 
-*Defined in [ploadin.ts:29](https://github.com/JuroOravec/ploadin/blob/16977af/src/ploadin.ts#L29)*
+*Defined in [ploadin.ts:29](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L29)*
 
 **Returns:** *[Ploadin](ploadin.md)*
 
@@ -50,7 +51,7 @@
 
 • **apply**? : *Function*
 
-*Defined in [types.ts:41](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L41)*
+*Defined in [types.ts:41](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L41)*
 
 ___
 
@@ -58,7 +59,7 @@ ___
 
 • **get asLoader**(): *object*
 
-*Defined in [ploadin.ts:53](https://github.com/JuroOravec/ploadin/blob/16977af/src/ploadin.ts#L53)*
+*Defined in [ploadin.ts:53](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L53)*
 
 **Returns:** *object*
 
@@ -76,7 +77,7 @@ ___
 
 • **loader**? : *[LoaderFunc](../README.md#loaderfunc)*
 
-*Defined in [types.ts:39](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L39)*
+*Defined in [types.ts:39](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L39)*
 
 ___
 
@@ -84,7 +85,7 @@ ___
 
 • **pitch**? : *[PitchFunc](../README.md#pitchfunc)*
 
-*Defined in [types.ts:40](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L40)*
+*Defined in [types.ts:40](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L40)*
 
 ## Accessors
 
@@ -92,7 +93,7 @@ ___
 
 • **get _classId**(): *[ClassId](../README.md#classid)*
 
-*Defined in [ploadin.ts:42](https://github.com/JuroOravec/ploadin/blob/16977af/src/ploadin.ts#L42)*
+*Defined in [ploadin.ts:42](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L42)*
 
 **Returns:** *[ClassId](../README.md#classid)*
 
@@ -102,9 +103,19 @@ ___
 
 • **get _instanceId**(): *[InstanceId](../README.md#instanceid)*
 
-*Defined in [ploadin.ts:34](https://github.com/JuroOravec/ploadin/blob/16977af/src/ploadin.ts#L34)*
+*Defined in [ploadin.ts:34](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L34)*
 
 **Returns:** *[InstanceId](../README.md#instanceid)*
+
+___
+
+###  classOptions
+
+• **get classOptions**(): *any*
+
+*Defined in [ploadin.ts:60](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L60)*
+
+**Returns:** *any*
 
 ___
 
@@ -112,7 +123,7 @@ ___
 
 • **get _classId**(): *[ClassId](../README.md#classid)*
 
-*Defined in [ploadin.ts:38](https://github.com/JuroOravec/ploadin/blob/16977af/src/ploadin.ts#L38)*
+*Defined in [ploadin.ts:38](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L38)*
 
 **Returns:** *[ClassId](../README.md#classid)*
 
@@ -122,7 +133,7 @@ ___
 
 • **get asLoader**(): *object*
 
-*Defined in [ploadin.ts:46](https://github.com/JuroOravec/ploadin/blob/16977af/src/ploadin.ts#L46)*
+*Defined in [ploadin.ts:46](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L46)*
 
 **Returns:** *object*
 

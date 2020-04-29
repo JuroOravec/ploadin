@@ -1,3 +1,5 @@
+import cloneDeep from 'lodash.clonedeep';
+
 import provider from './lib/provider';
 import debug from './lib/debug';
 
@@ -57,11 +59,16 @@ export class Ploadin implements IPloadin {
       instanceId: this._instanceId,
     });
   }
+
+  get classOptions() {
+    return cloneDeep(provider.getClassOptions(this));
+  }
 }
 
 provider.addClass(Ploadin);
 
-export function registerSubclass(PloadinSubclass: Subclass) {
-  debug(`Registering Ploadin class ${PloadinSubclass.name}`);
-  provider.addClass(PloadinSubclass);
+export function registerSubclass(subclass: Subclass, options?: any) {
+  debug(`Registering Ploadin class ${subclass.name}`);
+  const res = provider.addClass(subclass, options);
+  return typeof res === 'number';
 }

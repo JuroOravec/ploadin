@@ -298,7 +298,7 @@ TypeDoc documentation can be [found here](https://github.com/JuroOravec/ploadin/
 
 ### Ploadin
 
-Ploadin has following properties:
+Ploadin class has following properties:
 
 #### Ploadin.asLoader: object
 
@@ -306,25 +306,50 @@ Loader object to be used in webpack config.
 
 Following methods will be called if defined:
 
-#### Ploadin.apply(compiler: Compiler)
+#### Ploadin.classOptions: any
+
+Data associated with the Ploadin class. The data returned by `classOptions` is
+the same data (copy actually) of what is passed to `registerSubclass`.
+
+#### Ploadin.apply(compiler: Compiler): void
 
 Webpack plugin's `apply` method. See
 [Writing a Webpack plugin](https://webpack.js.org/contribute/writing-a-plugin/)
 for details.
 
-#### Ploadin.loader(loaderContext: LoaderContext, content?: string, map?: string, data: any)
+#### Ploadin.loader(loaderContext: LoaderContext, content?: string, map?: string, data: any): void
 
 Webpack loader's `loader` method. See [Webpack loaders](https://webpack.js.org/api/loaders/#synchronous-loaders)
 for details.
 
 > Note that argument signature is shifted as `loaderContext` is passed as first argument. `this`, instead, refers to `Ploadin` instance.
 
-#### Ploadin.pitch(loaderContext: LoaderContext, remainingRequest: string, precedingRequest: string, data: any)
+#### Ploadin.pitch(loaderContext: LoaderContext, remainingRequest: string, precedingRequest: string, data: any): void
 
 Webpack loader's `pitch` method. See [Webpack loader's pitch](https://webpack.js.org/api/loaders/#pitching-loader)
 for details.
 
 > Note that argument signature is shifted as `loaderContext` is passed as first argument. `this`, instead, refers to `Ploadin` instance.
+
+### Helpers
+
+#### registerSubclass(subclass: Subclass, options: any): boolean
+
+- subclass - class extending `Ploadin`
+- options - any data associated with this subclass
+
+Returns `true` if successfully registered, `false` if the class has been
+registered before.
+
+Normally, any class subclassing `Ploadin` is automatically registered with
+instance-manager when a first instance is created. This is necessary so the
+class and its instances can be looked up by indices.
+
+You can register the class yourself. This enables you to optionally pass along
+options associated with the given class.
+
+One use of this is to store options passed to class factory so we can associate
+the options with the dynamically-created class.
 
 ## 🔮 Background
 
