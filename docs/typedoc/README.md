@@ -47,7 +47,7 @@
 
 Ƭ **ClassId**: *ReturnType‹InstanceManager["addClass"]›*
 
-*Defined in [types.ts:5](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L5)*
+*Defined in [types.ts:5](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L5)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 Ƭ **Constructor**: *object*
 
-*Defined in [types.ts:3](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L3)*
+*Defined in [types.ts:3](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L3)*
 
 #### Type declaration:
 
@@ -65,7 +65,7 @@ ___
 
 Ƭ **GetLoaderOptions**: *object*
 
-*Defined in [ploadin.ts:12](https://github.com/JuroOravec/ploadin/blob/16977af/src/ploadin.ts#L12)*
+*Defined in [ploadin.ts:12](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L12)*
 
 #### Type declaration:
 
@@ -79,7 +79,7 @@ ___
 
 Ƭ **Instance**: *T*
 
-*Defined in [types.ts:8](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L8)*
+*Defined in [types.ts:8](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L8)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 Ƭ **InstanceId**: *ReturnType‹InstanceManager["addClass"]›*
 
-*Defined in [types.ts:7](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L7)*
+*Defined in [types.ts:7](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L7)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 Ƭ **InstanceProxy**: *object*
 
-*Defined in [loader.ts:13](https://github.com/JuroOravec/ploadin/blob/16977af/src/loader.ts#L13)*
+*Defined in [loader.ts:13](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/loader.ts#L13)*
 
 #### Type declaration:
 
@@ -105,7 +105,7 @@ ___
 
 Ƭ **LoaderContext**: *any*
 
-*Defined in [types.ts:11](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L11)*
+*Defined in [types.ts:11](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L11)*
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 Ƭ **LoaderFunc**: *function*
 
-*Defined in [types.ts:17](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L17)*
+*Defined in [types.ts:17](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L17)*
 
 #### Type declaration:
 
@@ -134,7 +134,7 @@ ___
 
 Ƭ **LoaderOptions**: *object & object*
 
-*Defined in [types.ts:12](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L12)*
+*Defined in [types.ts:12](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L12)*
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 Ƭ **NonNullClassId**: *NonNullable‹[ClassId](README.md#classid)›*
 
-*Defined in [types.ts:6](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L6)*
+*Defined in [types.ts:6](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L6)*
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 Ƭ **PitchFunc**: *function*
 
-*Defined in [types.ts:24](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L24)*
+*Defined in [types.ts:24](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L24)*
 
 #### Type declaration:
 
@@ -171,7 +171,7 @@ ___
 
 Ƭ **Subclass**: *[Constructor](README.md#constructor)‹T›*
 
-*Defined in [types.ts:9](https://github.com/JuroOravec/ploadin/blob/16977af/src/types.ts#L9)*
+*Defined in [types.ts:9](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/types.ts#L9)*
 
 ## Variables
 
@@ -179,7 +179,7 @@ ___
 
 • **instanceByIdMap**: *WeakMap‹object, [Ploadin](classes/ploadin.md)›* = new WeakMap<InstanceProxy, Instance>()
 
-*Defined in [loader.ts:16](https://github.com/JuroOravec/ploadin/blob/16977af/src/loader.ts#L16)*
+*Defined in [loader.ts:16](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/loader.ts#L16)*
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 • **instanceMapProxy**: *Map‹undefined | number, object›* = new Map<ClassId, InstanceProxy>()
 
-*Defined in [loader.ts:15](https://github.com/JuroOravec/ploadin/blob/16977af/src/loader.ts#L15)*
+*Defined in [loader.ts:15](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/loader.ts#L15)*
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 • **loaderPath**: *string* = require.resolve('./loader')
 
-*Defined in [ploadin.ts:10](https://github.com/JuroOravec/ploadin/blob/16977af/src/ploadin.ts#L10)*
+*Defined in [ploadin.ts:10](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L10)*
 
 ___
 
@@ -203,7 +203,7 @@ ___
 
 • **mainDebug**: *log* = getDebugLogger()
 
-*Defined in [lib/debug.ts:15](https://github.com/JuroOravec/ploadin/blob/16977af/src/lib/debug.ts#L15)*
+*Defined in [lib/debug.ts:15](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/lib/debug.ts#L15)*
 
 ## Functions
 
@@ -211,7 +211,7 @@ ___
 
 ▸ **cacheInstance**(`classId`: [NonNullClassId](README.md#nonnullclassid), `instance`: [Instance](README.md#instance)): *WeakMap‹object, [Ploadin](classes/ploadin.md)›*
 
-*Defined in [loader.ts:24](https://github.com/JuroOravec/ploadin/blob/16977af/src/loader.ts#L24)*
+*Defined in [loader.ts:24](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/loader.ts#L24)*
 
 **Parameters:**
 
@@ -228,7 +228,7 @@ ___
 
 ▸ **getCachedInstance**(`classId`: [NonNullClassId](README.md#nonnullclassid)): *undefined | [Ploadin](classes/ploadin.md)*
 
-*Defined in [loader.ts:19](https://github.com/JuroOravec/ploadin/blob/16977af/src/loader.ts#L19)*
+*Defined in [loader.ts:19](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/loader.ts#L19)*
 
 **Parameters:**
 
@@ -244,7 +244,7 @@ ___
 
 ▸ **getDebugLogger**(): *log*
 
-*Defined in [lib/debug.ts:4](https://github.com/JuroOravec/ploadin/blob/16977af/src/lib/debug.ts#L4)*
+*Defined in [lib/debug.ts:4](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/lib/debug.ts#L4)*
 
 **Returns:** *log*
 
@@ -254,7 +254,7 @@ ___
 
 ▸ **getLoaderObject**<**CId**, **IId**>(`__namedParameters`: object): *object*
 
-*Defined in [ploadin.ts:19](https://github.com/JuroOravec/ploadin/blob/16977af/src/ploadin.ts#L19)*
+*Defined in [ploadin.ts:19](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L19)*
 
 **Type parameters:**
 
@@ -287,7 +287,7 @@ ___
 
 ▸ **getPloadin**(`loaderContext`: [LoaderContext](README.md#loadercontext)): *undefined | [Ploadin](classes/ploadin.md)*
 
-*Defined in [loader.ts:33](https://github.com/JuroOravec/ploadin/blob/16977af/src/loader.ts#L33)*
+*Defined in [loader.ts:33](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/loader.ts#L33)*
 
 **Parameters:**
 
@@ -303,7 +303,7 @@ ___
 
 ▸ **loader**(`this`: [LoaderContext](README.md#loadercontext), `source?`: undefined | string, `sourceMap?`: undefined | string, ...`args`: any[]): *void*
 
-*Defined in [loader.ts:68](https://github.com/JuroOravec/ploadin/blob/16977af/src/loader.ts#L68)*
+*Defined in [loader.ts:68](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/loader.ts#L68)*
 
 **Parameters:**
 
@@ -322,7 +322,7 @@ ___
 
 ▸ **pitch**(`this`: [LoaderContext](README.md#loadercontext), `remainingRequest`: string, `precedingRequest`: string, ...`args`: any[]): *void*
 
-*Defined in [loader.ts:80](https://github.com/JuroOravec/ploadin/blob/16977af/src/loader.ts#L80)*
+*Defined in [loader.ts:80](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/loader.ts#L80)*
 
 **Parameters:**
 
@@ -339,14 +339,15 @@ ___
 
 ###  registerSubclass
 
-▸ **registerSubclass**(`PloadinSubclass`: [Subclass](README.md#subclass)): *void*
+▸ **registerSubclass**(`PloadinSubclass`: [Subclass](README.md#subclass), `subclassOptions`: any): *void*
 
-*Defined in [ploadin.ts:63](https://github.com/JuroOravec/ploadin/blob/16977af/src/ploadin.ts#L63)*
+*Defined in [ploadin.ts:67](https://github.com/JuroOravec/ploadin/blob/6c9f70f/src/ploadin.ts#L67)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `PloadinSubclass` | [Subclass](README.md#subclass) |
+`subclassOptions` | any |
 
 **Returns:** *void*
