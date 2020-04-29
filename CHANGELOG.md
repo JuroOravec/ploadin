@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/JuroOravec/ploadin/compare/v1.0.0...v1.0.1) (2020-04-29)
+
+
+### Bug Fixes
+
+* **caching:** fix caching ([e6e28d5](https://github.com/JuroOravec/ploadin/commit/e6e28d5e917fde20a3f7751950cb4be2d2548734))
+
 # 1.0.0 (2020-04-29)
 
 

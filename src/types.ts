@@ -5,6 +5,7 @@ type Constructor<T> = new (...args: any[]) => T;
 export type ClassId = ReturnType<InstanceManager['addClass']>;
 export type NonNullClassId = NonNullable<ClassId>;
 export type InstanceId = ReturnType<InstanceManager['addClass']>;
+export type NonNullInstanceId = NonNullable<InstanceId>;
 export type Instance<T extends Ploadin = Ploadin> = T;
 export type Subclass<T extends Instance = Instance> = Constructor<T>;
 
