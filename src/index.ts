@@ -1,3 +1,1 @@
-import debug from './lib/debug';
-
-debug('Hello World');
+export { Ploadin, registerSubclass } from './ploadin';
