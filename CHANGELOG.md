@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/JuroOravec/ploadin/compare/v1.0.1...v1.1.0) (2020-04-29)
+
+
+### Features
+
+* add Ploadin.classOptions property ([a3c617d](https://github.com/JuroOravec/ploadin/commit/a3c617de362f7f0de9aa9d49bd9ccddf4f92c703))
+
 ## [1.0.1](https://github.com/JuroOravec/ploadin/compare/v1.0.0...v1.0.1) (2020-04-29)
 
 
