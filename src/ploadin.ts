@@ -1,4 +1,5 @@
 import provider from './lib/provider';
+import debug from './lib/debug';
 
 import type {
   ClassId,
@@ -61,5 +62,6 @@ export class Ploadin implements IPloadin {
 provider.addClass(Ploadin);
 
 export function registerSubclass(PloadinSubclass: Subclass) {
+  debug(`Registering Ploadin class ${PloadinSubclass.name}`);
   provider.addClass(PloadinSubclass);
 }

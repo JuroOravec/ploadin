@@ -9,6 +9,7 @@ import type {
 } from './types';
 
 import provider from './lib/provider';
+import debug from './lib/debug';
 
 type InstanceProxy = { [id in NonNullClassId]: Instance };
 type IdToInstanceProxy = Map<NonNullInstanceId, InstanceProxy>;
@@ -34,14 +35,17 @@ function cacheInstance(
 ) {
   let instanceKeyMap = classMapProxy.get(classId);
   if (instanceKeyMap === undefined) {
+    debug(`Adding instance key map for classId: ${classId}`);
     instanceKeyMap = new Map();
     classMapProxy.set(classId, instanceKeyMap);
   }
   let instanceKey = instanceMapProxy.get(instanceId);
   if (instanceKey === undefined) {
+    debug(`Adding instance proxy for classId: ${classId}`);
     instanceKey = { id: instanceId } as InstanceProxy;
     instanceMapProxy.set(instanceId, instanceKey);
   }
+  debug(`Caching instance for classId: ${classId} instanceId: ${instanceId}`);
   return instanceByIdMap.set(instanceKey, instance);
 }
 
@@ -64,7 +68,13 @@ function getPloadin(loaderContext: LoaderContext) {
   }
 
   const cachedInstance = getCachedInstance(classId, instanceId);
-  if (cachedInstance) return cachedInstance;
+  if (cachedInstance) {
+    debug(
+      `Cached instance found for classId: ${classId} instanceId: ` +
+        `${instanceId}`,
+    );
+    return cachedInstance;
+  }
 
   const klass = provider.getClassById(classId);
   if (klass === undefined) {
@@ -77,6 +87,7 @@ function getPloadin(loaderContext: LoaderContext) {
   const instance = provider.getClassInstance(klass, instanceId);
   cacheInstance(classId, instanceId, instance!);
 
+  debug(`Returning instance for classId: ${classId} instanceId: ${instanceId}`);
   return instance;
 }
 
@@ -88,7 +99,13 @@ export default function loader(
 ) {
   const instance = getPloadin(this);
   if (instance && instance.loader) {
+    debug(`Calling loader method`);
     return instance.loader(this, source, sourceMap, ...args);
+  } else {
+    debug(
+      `Not calling loader method. Either instance doesn't exist or doesn't ` +
+        `have loader method`,
+    );
   }
 }
 
@@ -100,6 +117,12 @@ export function pitch(
 ) {
   const instance = getPloadin(this);
   if (instance && instance.pitch) {
+    debug(`Calling pitch method`);
     return instance.pitch(this, remainingRequest, precedingRequest, ...args);
+  } else {
+    debug(
+      `Not calling pitch method. Either instance doesn't exist or doesn't ` +
+        `have loader method`,
+    );
   }
 }
