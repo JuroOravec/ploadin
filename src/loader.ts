@@ -48,14 +48,14 @@ function getPloadin(loaderContext: LoaderContext) {
   const klass = provider.getClassById(classId);
   if (klass === undefined) {
     throw Error(
-      `[Ploadin][loader] Invalid class ID "${classId}". No class with such` +
+      `[Ploadin][loader] Invalid class ID "${classId}". No class with such ` +
         `ID.`,
     );
   }
 
   if (instanceId === undefined) {
     throw Error(
-      '[Ploadin][loader] Class ID not found. Cannot search for Ploadin' +
+      '[Ploadin][loader] Class ID not found. Cannot search for Ploadin ' +
         'instance',
     );
   }
