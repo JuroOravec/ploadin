@@ -1,8 +1,8 @@
 import loaderUtils from 'loader-utils';
 
 import type {
-  ClassId,
   NonNullClassId,
+  NonNullInstanceId,
   Instance,
   LoaderContext,
   LoaderOptions,
@@ -11,23 +11,38 @@ import type {
 import provider from './lib/provider';
 
 type InstanceProxy = { [id in NonNullClassId]: Instance };
+type IdToInstanceProxy = Map<NonNullInstanceId, InstanceProxy>;
 
-const instanceMapProxy = new Map<ClassId, InstanceProxy>();
+const classMapProxy = new Map<NonNullClassId, IdToInstanceProxy>();
+const instanceMapProxy = new Map<NonNullInstanceId, InstanceProxy>();
 const instanceByIdMap = new WeakMap<InstanceProxy, Instance>();
 
 // Proxied access to the instance map so instances can be weakly referenced
-function getCachedInstance(classId: NonNullClassId) {
-  const mapKey = instanceMapProxy.get(classId);
-  return instanceByIdMap.get(mapKey!);
+function getCachedInstance(
+  classId: NonNullClassId,
+  instanceId: NonNullInstanceId,
+) {
+  const instanceKeyMap = classMapProxy.get(classId);
+  const instanceKey = instanceKeyMap?.get(instanceId);
+  return instanceByIdMap.get(instanceKey!);
 }
 
-function cacheInstance(classId: NonNullClassId, instance: Instance) {
-  let mapKey = instanceMapProxy.get(classId);
-  if (mapKey === undefined) {
-    mapKey = { id: classId } as InstanceProxy;
-    instanceMapProxy.set(classId, mapKey);
+function cacheInstance(
+  classId: NonNullClassId,
+  instanceId: NonNullInstanceId,
+  instance: Instance,
+) {
+  let instanceKeyMap = classMapProxy.get(classId);
+  if (instanceKeyMap === undefined) {
+    instanceKeyMap = new Map();
+    classMapProxy.set(classId, instanceKeyMap);
   }
-  return instanceByIdMap.set(mapKey, instance);
+  let instanceKey = instanceMapProxy.get(instanceId);
+  if (instanceKey === undefined) {
+    instanceKey = { id: instanceId } as InstanceProxy;
+    instanceMapProxy.set(instanceId, instanceKey);
+  }
+  return instanceByIdMap.set(instanceKey, instance);
 }
 
 function getPloadin(loaderContext: LoaderContext) {
@@ -41,8 +56,14 @@ function getPloadin(loaderContext: LoaderContext) {
         'instance',
     );
   }
+  if (instanceId === undefined) {
+    throw Error(
+      '[Ploadin][loader] Instance ID not found. Cannot search for Ploadin ' +
+        'instance',
+    );
+  }
 
-  const cachedInstance = getCachedInstance(classId);
+  const cachedInstance = getCachedInstance(classId, instanceId);
   if (cachedInstance) return cachedInstance;
 
   const klass = provider.getClassById(classId);
@@ -53,14 +74,8 @@ function getPloadin(loaderContext: LoaderContext) {
     );
   }
 
-  if (instanceId === undefined) {
-    throw Error(
-      '[Ploadin][loader] Class ID not found. Cannot search for Ploadin ' +
-        'instance',
-    );
-  }
   const instance = provider.getClassInstance(klass, instanceId);
-  cacheInstance(classId, instance!);
+  cacheInstance(classId, instanceId, instance!);
 
   return instance;
 }
