@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/JuroOravec/ploadin/compare/v1.1.0...v1.1.1) (2020-05-03)
+
+
+### Bug Fixes
+
+* **logging:** fix package name detection by debug ([501801b](https://github.com/JuroOravec/ploadin/commit/501801b074e135a241b54cb4eab6824ad75b7b8d))
+
 # [1.1.0](https://github.com/JuroOravec/ploadin/compare/v1.0.1...v1.1.0) (2020-04-29)
 
 
