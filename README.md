@@ -12,7 +12,7 @@
 [![CodeCov](https://codecov.io/gh/JuroOravec/ploadin/branch/master/graph/badge.svg)](https://codecov.io/gh/JuroOravec/ploadin)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JuroOravec/ploadin.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JuroOravec/ploadin/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/JuroOravec/ploadin.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JuroOravec/ploadin/context:javascript)
-[![Maintainability](https://api.codeclimate.com/v1/badges/eaaa39ef8e79f8d2805a/maintainability)](https://codeclimate.com/github/JuroOravec/ploadin/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f1810c31ed56dfa9d125/maintainability)](https://codeclimate.com/github/JuroOravec/ploadin/maintainability)
 
 ---
 
