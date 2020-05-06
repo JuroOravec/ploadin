@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/JuroOravec/ploadin/compare/v1.1.2...v1.1.3) (2020-05-04)
+
+
+### Bug Fixes
+
+* **deps:** bump instance-manager from 1.1.1 to 1.1.2 ([045a05e](https://github.com/JuroOravec/ploadin/commit/045a05e7df186b82c95c4f0fc1c6d756238ae454))
+
 ## [1.1.2](https://github.com/JuroOravec/ploadin/compare/v1.1.1...v1.1.2) (2020-05-03)
 
 ## [1.1.1](https://github.com/JuroOravec/ploadin/compare/v1.1.0...v1.1.1) (2020-05-03)
