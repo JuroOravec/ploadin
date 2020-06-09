@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/JuroOravec/ploadin/compare/v1.1.4...v1.1.5) (2020-06-09)
+
+
+### Bug Fixes
+
+* upgrade debug from 4.1.1 to 4.2.0 ([f683e19](https://github.com/JuroOravec/ploadin/commit/f683e19a42567afe5f234140f455105de21fc73f))
+
 ## [1.1.4](https://github.com/JuroOravec/ploadin/compare/v1.1.3...v1.1.4) (2020-05-07)
 
 
