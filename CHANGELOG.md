@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/JuroOravec/ploadin/compare/v1.1.4...v1.1.5) (2020-06-20)
+
+
+### Bug Fixes
+
+* upgrade @types/loader-utils from 1.1.3 to 1.1.4 ([91a2159](https://github.com/JuroOravec/ploadin/commit/91a21598f5e09a4191ee536949141c2a87f83063))
+
 ## [1.1.4](https://github.com/JuroOravec/ploadin/compare/v1.1.3...v1.1.4) (2020-05-07)
 
 
