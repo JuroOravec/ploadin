@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/JuroOravec/ploadin/compare/v1.1.4...v1.1.5) (2020-07-07)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump npm-registry-fetch from 4.0.3 to 4.0.5 ([e518f36](https://github.com/JuroOravec/ploadin/commit/e518f36069a5ae3c90b514c8b208df20f1ab8ace))
+
 ## [1.1.4](https://github.com/JuroOravec/ploadin/compare/v1.1.3...v1.1.4) (2020-05-07)
 
 
