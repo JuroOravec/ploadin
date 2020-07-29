@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/JuroOravec/ploadin/compare/v1.1.4...v1.1.5) (2020-07-29)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump elliptic from 6.5.2 to 6.5.3 ([5083bbf](https://github.com/JuroOravec/ploadin/commit/5083bbff85c3cf77ab4bd1f630f9d156baee83f4))
+
 ## [1.1.4](https://github.com/JuroOravec/ploadin/compare/v1.1.3...v1.1.4) (2020-05-07)
 
 
