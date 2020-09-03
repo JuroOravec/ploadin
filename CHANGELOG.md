@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/JuroOravec/ploadin/compare/v1.1.4...v1.1.5) (2020-09-03)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump bl from 4.0.2 to 4.0.3 ([4d6e2fa](https://github.com/JuroOravec/ploadin/commit/4d6e2fae46227a37e336175609cdbe9f5f409dfc))
+
 ## [1.1.4](https://github.com/JuroOravec/ploadin/compare/v1.1.3...v1.1.4) (2020-05-07)
 
 
