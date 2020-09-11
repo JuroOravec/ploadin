@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/JuroOravec/ploadin/compare/v1.1.4...v1.1.5) (2020-09-11)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump node-fetch from 2.6.0 to 2.6.1 ([e702a64](https://github.com/JuroOravec/ploadin/commit/e702a640cb35e2fba613061c962579602cbca37b))
+
 ## [1.1.4](https://github.com/JuroOravec/ploadin/compare/v1.1.3...v1.1.4) (2020-05-07)
 
 
