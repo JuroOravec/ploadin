@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/JuroOravec/ploadin/compare/v1.1.4...v1.1.5) (2020-11-25)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump highlight.js from 10.0.1 to 10.4.0 ([dd11c32](https://github.com/JuroOravec/ploadin/commit/dd11c32f8d32200d01c6f64c8bf60460c9cfa558))
+
 ## [1.1.4](https://github.com/JuroOravec/ploadin/compare/v1.1.3...v1.1.4) (2020-05-07)
 
 
